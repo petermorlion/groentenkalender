@@ -1,0 +1,16 @@
+﻿<local:MonthViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Groentenwijzer"
+    Name="Januari">
+
+    <local:MonthViewModel.Vegetables>
+        <local:VegetableViewModel Name="Aardappelen" />
+        <local:VegetableViewModel Name="Pastinaak" />
+        <local:VegetableViewModel Name="Wortel" />
+        <local:VegetableViewModel Name="Raap" />
+        <local:VegetableViewModel Name="Prei" />
+        <local:VegetableViewModel Name="Erwten" />
+    </local:MonthViewModel.Vegetables>
+
+</local:MonthViewModel>
