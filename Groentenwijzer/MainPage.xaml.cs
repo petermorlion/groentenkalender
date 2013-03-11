@@ -21,7 +21,7 @@ namespace Groentenwijzer
             InitializeComponent();
 
             // Set the data context of the listbox control to the sample data
-            DataContext = Vegetables.All();
+            //DataContext = Vegetables.All();
             this.Loaded += new RoutedEventHandler(MainPage_Loaded);
         }
 

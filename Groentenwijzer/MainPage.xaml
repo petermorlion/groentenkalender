@@ -21,8 +21,8 @@
                 <ListBox x:Name="FirstListBox" Margin="0,0,-12,0" ItemsSource="{Binding Vegetables}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel Margin="0,0,0,17" Width="432" Height="78">
-                                <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                            <StackPanel Margin="0,0,0,17" Width="432" Height="45">
+                                <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextLargeStyle}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -34,8 +34,11 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <controls:Pivot Title="Groentenwijzer" x:Name="MainPivot" ItemsSource="{Binding AllMonths}" ItemTemplate="{StaticResource MonthPivotItemTemplate}">
-            
+        <controls:Pivot Title="Groentenwijzer" 
+                        x:Name="MainPivot" 
+                        ItemsSource="{Binding AllMonths}" 
+                        ItemTemplate="{StaticResource MonthPivotItemTemplate}"
+                        SelectedIndex="{Binding SelectedMonth, Mode=TwoWay}">
         </controls:Pivot>
     </Grid>
  

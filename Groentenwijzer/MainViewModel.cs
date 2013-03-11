@@ -1,3 +1,4 @@
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -7,6 +8,13 @@ namespace Groentenwijzer
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        private int _selectedMonth;
+
+        public MainViewModel()
+        {
+            _selectedMonth = DateTime.Now.Month - 1;
+        }
+
         public ObservableCollection<MonthViewModel> AllMonths
         {
             get
@@ -26,6 +34,19 @@ namespace Groentenwijzer
                                new MonthViewModel("November", Vegetables.All().Where(x => x.Months.Contains(11))),
                                new MonthViewModel("December", Vegetables.All().Where(x => x.Months.Contains(12)))
                            };
+            }
+        }
+
+        public int SelectedMonth
+        {
+            get { return _selectedMonth; }
+            set
+            {
+                if (_selectedMonth != value)
+                {
+                    _selectedMonth = value;
+                    OnPropertyChanged("SelectedMonth");
+                }
             }
         }
 
