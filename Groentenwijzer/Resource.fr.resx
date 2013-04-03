@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aardappelen" xml:space="preserve">
+    <value>Pommes de terre</value>
+  </data>
+  <data name="Andijvie" xml:space="preserve">
+    <value>Andives</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>Avril</value>
+  </data>
+  <data name="Artisjok" xml:space="preserve">
+    <value>Artichoque</value>
+  </data>
+  <data name="Asperges" xml:space="preserve">
+    <value>Asperges</value>
+  </data>
+  <data name="Aubergine" xml:space="preserve">
+    <value>Aubergine</value>
+  </data>
+  <data name="Augustus" xml:space="preserve">
+    <value>Août</value>
+  </data>
+  <data name="Bleekselder" xml:space="preserve">
+    <value>(Bleekselder)</value>
+  </data>
+  <data name="Bloemkool" xml:space="preserve">
+    <value>Chou fleur</value>
+  </data>
+  <data name="Broccoli" xml:space="preserve">
+    <value>Broccoli</value>
+  </data>
+  <data name="Chinese_kool" xml:space="preserve">
+    <value>Chou chinois</value>
+  </data>
+  <data name="Courgette" xml:space="preserve">
+    <value>Courgette</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Décembre</value>
+  </data>
+  <data name="Doperwtjes" xml:space="preserve">
+    <value>Pois</value>
+  </data>
+  <data name="Februari" xml:space="preserve">
+    <value>Février</value>
+  </data>
+  <data name="Groene_selder" xml:space="preserve">
+    <value>(Groene selder)</value>
+  </data>
+  <data name="Januari" xml:space="preserve">
+    <value>Janvier</value>
+  </data>
+  <data name="Juli" xml:space="preserve">
+    <value>Juillet</value>
+  </data>
+  <data name="Juni" xml:space="preserve">
+    <value>Juin</value>
+  </data>
+  <data name="Knolselder" xml:space="preserve">
+    <value>(Knolselder)</value>
+  </data>
+  <data name="Komkommer" xml:space="preserve">
+    <value>Comcombre</value>
+  </data>
+  <data name="Koolrabi" xml:space="preserve">
+    <value>(Koolrabi)</value>
+  </data>
+  <data name="Kropsla" xml:space="preserve">
+    <value>(Kropsla)</value>
+  </data>
+  <data name="Maart" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="Maïs" xml:space="preserve">
+    <value>Maïs</value>
+  </data>
+  <data name="Mei" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Novembre</value>
+  </data>
+  <data name="Oktober" xml:space="preserve">
+    <value>Octobre</value>
+  </data>
+  <data name="Paddenstoelen" xml:space="preserve">
+    <value>Champignons</value>
+  </data>
+  <data name="Paprika" xml:space="preserve">
+    <value>(Paprika)</value>
+  </data>
+  <data name="Pastinaak" xml:space="preserve">
+    <value>(Pastinaak)</value>
+  </data>
+  <data name="Pompoen" xml:space="preserve">
+    <value>Citrouille</value>
+  </data>
+  <data name="Prei" xml:space="preserve">
+    <value>(Prei)</value>
+  </data>
+  <data name="Prinsessenbonen" xml:space="preserve">
+    <value>(Prinsessenbonen)</value>
+  </data>
+  <data name="Raap" xml:space="preserve">
+    <value>(Raap)</value>
+  </data>
+  <data name="Raapstelen" xml:space="preserve">
+    <value>(Raapstelen)</value>
+  </data>
+  <data name="Radijs" xml:space="preserve">
+    <value>Radis</value>
+  </data>
+  <data name="Rammenas" xml:space="preserve">
+    <value>(Rammenas)</value>
+  </data>
+  <data name="Rodekool" xml:space="preserve">
+    <value>(Rodekool)</value>
+  </data>
+  <data name="Rode_biet" xml:space="preserve">
+    <value>(Rode biet)</value>
+  </data>
+  <data name="Savooikool" xml:space="preserve">
+    <value>(Savooikool)</value>
+  </data>
+  <data name="Schorseneren" xml:space="preserve">
+    <value>(Schorseneren)</value>
+  </data>
+  <data name="Septebmer" xml:space="preserve">
+    <value>Septembre</value>
+  </data>
+  <data name="Snijbonen" xml:space="preserve">
+    <value>(Snijbonen)</value>
+  </data>
+  <data name="Spinazie" xml:space="preserve">
+    <value>Epinards</value>
+  </data>
+  <data name="Spitskool" xml:space="preserve">
+    <value>(Spitskool)</value>
+  </data>
+  <data name="Spruiten" xml:space="preserve">
+    <value>(Spruiten)</value>
+  </data>
+  <data name="Tomaten" xml:space="preserve">
+    <value>Tomates</value>
+  </data>
+  <data name="Uien" xml:space="preserve">
+    <value>Oignons</value>
+  </data>
+  <data name="Veldsla" xml:space="preserve">
+    <value>(Veldsla)</value>
+  </data>
+  <data name="Venkel" xml:space="preserve">
+    <value>(Venkel)</value>
+  </data>
+  <data name="Warmoes" xml:space="preserve">
+    <value>(Warmoes)</value>
+  </data>
+  <data name="Witlof" xml:space="preserve">
+    <value>(Witlof)</value>
+  </data>
+  <data name="Wittekool" xml:space="preserve">
+    <value>(Wittekool)</value>
+  </data>
+  <data name="Wortelen" xml:space="preserve">
+    <value>Carottes</value>
+  </data>
+</root>

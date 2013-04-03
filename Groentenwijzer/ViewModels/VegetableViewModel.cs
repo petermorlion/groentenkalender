@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 
 namespace Groentenwijzer
@@ -10,7 +11,7 @@ namespace Groentenwijzer
 
         public VegetableViewModel(string name)
         {
-            Name = name;
+            Name = Resource.ResourceManager.GetString(name.Replace(" ", "_")) ?? name;
         }
 
         public string Name { get; set; }
