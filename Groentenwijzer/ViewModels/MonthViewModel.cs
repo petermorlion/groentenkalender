@@ -21,19 +21,14 @@ namespace Groentenwijzer
         {
         }
 
-        public MonthViewModel(string monthName, IEnumerable<FoodItem> vegetables, IEnumerable<FoodItem> fruit)
+        public MonthViewModel(string monthName, IEnumerable<FoodItem> food)
         {
             Name = Resource.ResourceManager.GetString(monthName.Replace(" ", "_")) ?? monthName;
 
             var foodList = new List<FoodItemViewModel>();
-            foreach (var vegetable in vegetables)
+            foreach (var foodItem in food)
             {
-                foodList.Add(new FoodItemViewModel(vegetable.Name));
-            }
-
-            foreach (var pieceOfFruit in fruit)
-            {
-                foodList.Add(new FoodItemViewModel(pieceOfFruit.Name));
+                foodList.Add(new FoodItemViewModel(foodItem.Name));
             }
 
             FoodItems = new ObservableCollection<FoodItemViewModel>(foodList.OrderBy(x => x.Name));

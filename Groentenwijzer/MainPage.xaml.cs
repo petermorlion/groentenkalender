@@ -27,7 +27,7 @@ namespace Groentenwijzer
         // Load data for the ViewModel Items
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            MainPivot.DataContext = new MainViewModel();
+            MainPivot.DataContext = new MainViewModel(new[] { FoodType.Fruit, FoodType.Vegetable });
         }
     }
 }

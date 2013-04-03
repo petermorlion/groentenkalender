@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -9,9 +10,11 @@ namespace Groentenwijzer
     public class MainViewModel : INotifyPropertyChanged
     {
         private int _selectedMonth;
+        private IEnumerable<FoodType> _foodTypes;
 
-        public MainViewModel()
+        public MainViewModel(IEnumerable<FoodType> foodTypes)
         {
+            _foodTypes = foodTypes;
             _selectedMonth = DateTime.Now.Month - 1;
         }
 
@@ -21,20 +24,37 @@ namespace Groentenwijzer
             {
                 return new ObservableCollection<MonthViewModel>
                            {
-                               new MonthViewModel("Januari", Vegetables.All().Where(x => x.Months.Contains(1)), Fruit.All().Where(x => x.Months.Contains(1))),
-                               new MonthViewModel("Februari", Vegetables.All().Where(x => x.Months.Contains(2)), Fruit.All().Where(x => x.Months.Contains(2))),
-                               new MonthViewModel("Maart", Vegetables.All().Where(x => x.Months.Contains(3)), Fruit.All().Where(x => x.Months.Contains(3))),
-                               new MonthViewModel("April",  Vegetables.All().Where(x => x.Months.Contains(4)), Fruit.All().Where(x => x.Months.Contains(4))),
-                               new MonthViewModel("Mei",Vegetables.All().Where(x => x.Months.Contains(5)), Fruit.All().Where(x => x.Months.Contains(5))),
-                               new MonthViewModel("Juni", Vegetables.All().Where(x => x.Months.Contains(6)), Fruit.All().Where(x => x.Months.Contains(6))),
-                               new MonthViewModel("Juli", Vegetables.All().Where(x => x.Months.Contains(7)), Fruit.All().Where(x => x.Months.Contains(7))),
-                               new MonthViewModel("Augustus", Vegetables.All().Where(x => x.Months.Contains(8)), Fruit.All().Where(x => x.Months.Contains(8))),
-                               new MonthViewModel("September", Vegetables.All().Where(x => x.Months.Contains(9)), Fruit.All().Where(x => x.Months.Contains(9))),
-                               new MonthViewModel("Oktober", Vegetables.All().Where(x => x.Months.Contains(10)), Fruit.All().Where(x => x.Months.Contains(10))),
-                               new MonthViewModel("November", Vegetables.All().Where(x => x.Months.Contains(11)), Fruit.All().Where(x => x.Months.Contains(11))),
-                               new MonthViewModel("December", Vegetables.All().Where(x => x.Months.Contains(12)), Fruit.All().Where(x => x.Months.Contains(12)))
+                               new MonthViewModel("Januari", GetFood(1)),
+                               new MonthViewModel("Februari", GetFood(2)),
+                               new MonthViewModel("Maart", GetFood(3)),
+                               new MonthViewModel("April", GetFood(4)),
+                               new MonthViewModel("Mei", GetFood(5)),
+                               new MonthViewModel("Juni", GetFood(6)),
+                               new MonthViewModel("Juli", GetFood(7)),
+                               new MonthViewModel("Augustus", GetFood(8)),
+                               new MonthViewModel("September", GetFood(9)),
+                               new MonthViewModel("Oktober", GetFood(10)),
+                               new MonthViewModel("November", GetFood(11)),
+                               new MonthViewModel("December", GetFood(12))
                            };
             }
+        }
+
+        private IEnumerable<FoodItem> GetFood(int month)
+        {
+            var result = new List<FoodItem>();
+
+            if (_foodTypes.Contains(FoodType.Vegetable))
+            {
+                result.AddRange(Vegetables.All().Where(x => x.Months.Contains(month)));
+            }
+
+            if (_foodTypes.Contains(FoodType.Fruit))
+            {
+                result.AddRange(Fruit.All().Where(x => x.Months.Contains(month)));
+            }
+
+            return result;
         }
 
         public int SelectedMonth
