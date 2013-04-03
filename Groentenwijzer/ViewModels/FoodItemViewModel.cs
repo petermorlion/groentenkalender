@@ -3,13 +3,13 @@ using System.ComponentModel;
 
 namespace Groentenwijzer
 {
-    public class VegetableViewModel : INotifyPropertyChanged
+    public class FoodItemViewModel : INotifyPropertyChanged
     {
-        public VegetableViewModel()
+        public FoodItemViewModel()
         {
         }
 
-        public VegetableViewModel(string name)
+        public FoodItemViewModel(string name)
         {
             Name = Resource.ResourceManager.GetString(name.Replace(" ", "_")) ?? name;
         }

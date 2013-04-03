@@ -4,13 +4,13 @@
     xmlns:local="clr-namespace:Groentenwijzer"
     Name="Januari">
 
-    <local:MonthViewModel.Vegetables>
-        <local:VegetableViewModel Name="Aardappelen" />
-        <local:VegetableViewModel Name="Pastinaak" />
-        <local:VegetableViewModel Name="Wortel" />
-        <local:VegetableViewModel Name="Raap" />
-        <local:VegetableViewModel Name="Prei" />
-        <local:VegetableViewModel Name="Erwten" />
-    </local:MonthViewModel.Vegetables>
+    <local:MonthViewModel.FoodItems>
+        <local:FoodItemViewModel Name="Aardappelen" />
+        <local:FoodItemViewModel Name="Pastinaak" />
+        <local:FoodItemViewModel Name="Wortel" />
+        <local:FoodItemViewModel Name="Raap" />
+        <local:FoodItemViewModel Name="Prei" />
+        <local:FoodItemViewModel Name="Erwten" />
+    </local:MonthViewModel.FoodItems>
 
 </local:MonthViewModel>

@@ -80,7 +80,7 @@
     <Compile Include="SampleData\FoodItem.cs" />
     <Compile Include="SampleData\Vegetables.cs" />
     <Compile Include="ViewModels\MonthViewModel.cs" />
-    <Compile Include="ViewModels\VegetableViewModel.cs" />
+    <Compile Include="ViewModels\FoodItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

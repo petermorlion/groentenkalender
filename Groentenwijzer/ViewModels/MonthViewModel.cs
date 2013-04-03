@@ -21,17 +21,22 @@ namespace Groentenwijzer
         {
         }
 
-        public MonthViewModel(string monthName, IEnumerable<FoodItem> vegetables)
+        public MonthViewModel(string monthName, IEnumerable<FoodItem> vegetables, IEnumerable<FoodItem> fruit)
         {
-            Name = monthName;
+            Name = Resource.ResourceManager.GetString(monthName.Replace(" ", "_")) ?? monthName;
 
-            var vegetablesList = new List<VegetableViewModel>();
+            var foodList = new List<FoodItemViewModel>();
             foreach (var vegetable in vegetables)
             {
-                vegetablesList.Add(new VegetableViewModel(vegetable.Name));
+                foodList.Add(new FoodItemViewModel(vegetable.Name));
             }
 
-            Vegetables = new ObservableCollection<VegetableViewModel>(vegetablesList.OrderBy(x => x.Name));
+            foreach (var pieceOfFruit in fruit)
+            {
+                foodList.Add(new FoodItemViewModel(pieceOfFruit.Name));
+            }
+
+            FoodItems = new ObservableCollection<FoodItemViewModel>(foodList.OrderBy(x => x.Name));
         }
 
         public string Name
@@ -44,7 +49,7 @@ namespace Groentenwijzer
             }
         }
 
-        public ObservableCollection<VegetableViewModel> Vegetables { get; set; }
+        public ObservableCollection<FoodItemViewModel> FoodItems { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 

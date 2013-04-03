@@ -21,18 +21,18 @@ namespace Groentenwijzer
             {
                 return new ObservableCollection<MonthViewModel>
                            {
-                               new MonthViewModel("Januari", Vegetables.All().Where(x => x.Months.Contains(1))),
-                               new MonthViewModel("Februari", Vegetables.All().Where(x => x.Months.Contains(2))),
-                               new MonthViewModel("Maart", Vegetables.All().Where(x => x.Months.Contains(3))),
-                               new MonthViewModel("April",  Vegetables.All().Where(x => x.Months.Contains(4))),
-                               new MonthViewModel("Mei",Vegetables.All().Where(x => x.Months.Contains(5))),
-                               new MonthViewModel("Juni", Vegetables.All().Where(x => x.Months.Contains(6))),
-                               new MonthViewModel("Juli", Vegetables.All().Where(x => x.Months.Contains(7))),
-                               new MonthViewModel("Augustus", Vegetables.All().Where(x => x.Months.Contains(8))),
-                               new MonthViewModel("September", Vegetables.All().Where(x => x.Months.Contains(9))),
-                               new MonthViewModel("Oktober", Vegetables.All().Where(x => x.Months.Contains(10))),
-                               new MonthViewModel("November", Vegetables.All().Where(x => x.Months.Contains(11))),
-                               new MonthViewModel("December", Vegetables.All().Where(x => x.Months.Contains(12)))
+                               new MonthViewModel("Januari", Vegetables.All().Where(x => x.Months.Contains(1)), Fruit.All().Where(x => x.Months.Contains(1))),
+                               new MonthViewModel("Februari", Vegetables.All().Where(x => x.Months.Contains(2)), Fruit.All().Where(x => x.Months.Contains(2))),
+                               new MonthViewModel("Maart", Vegetables.All().Where(x => x.Months.Contains(3)), Fruit.All().Where(x => x.Months.Contains(3))),
+                               new MonthViewModel("April",  Vegetables.All().Where(x => x.Months.Contains(4)), Fruit.All().Where(x => x.Months.Contains(4))),
+                               new MonthViewModel("Mei",Vegetables.All().Where(x => x.Months.Contains(5)), Fruit.All().Where(x => x.Months.Contains(5))),
+                               new MonthViewModel("Juni", Vegetables.All().Where(x => x.Months.Contains(6)), Fruit.All().Where(x => x.Months.Contains(6))),
+                               new MonthViewModel("Juli", Vegetables.All().Where(x => x.Months.Contains(7)), Fruit.All().Where(x => x.Months.Contains(7))),
+                               new MonthViewModel("Augustus", Vegetables.All().Where(x => x.Months.Contains(8)), Fruit.All().Where(x => x.Months.Contains(8))),
+                               new MonthViewModel("September", Vegetables.All().Where(x => x.Months.Contains(9)), Fruit.All().Where(x => x.Months.Contains(9))),
+                               new MonthViewModel("Oktober", Vegetables.All().Where(x => x.Months.Contains(10)), Fruit.All().Where(x => x.Months.Contains(10))),
+                               new MonthViewModel("November", Vegetables.All().Where(x => x.Months.Contains(11)), Fruit.All().Where(x => x.Months.Contains(11))),
+                               new MonthViewModel("December", Vegetables.All().Where(x => x.Months.Contains(12)), Fruit.All().Where(x => x.Months.Contains(12)))
                            };
             }
         }
