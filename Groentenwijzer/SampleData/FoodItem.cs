@@ -2,7 +2,7 @@
 
 namespace Groentenwijzer.SampleData
 {
-    public class Vegetable
+    public class FoodItem
     {
         public string Name { get; set; }
 

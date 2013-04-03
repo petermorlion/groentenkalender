@@ -21,7 +21,7 @@ namespace Groentenwijzer
         {
         }
 
-        public MonthViewModel(string monthName, IEnumerable<Vegetable> vegetables)
+        public MonthViewModel(string monthName, IEnumerable<FoodItem> vegetables)
         {
             Name = monthName;
 

@@ -76,7 +76,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="SampleData\Vegetable.cs" />
+    <Compile Include="SampleData\Fruit.cs" />
+    <Compile Include="SampleData\FoodItem.cs" />
     <Compile Include="SampleData\Vegetables.cs" />
     <Compile Include="ViewModels\MonthViewModel.cs" />
     <Compile Include="ViewModels\VegetableViewModel.cs" />
