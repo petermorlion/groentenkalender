@@ -282,4 +282,13 @@
   <data name="Wortelen" xml:space="preserve">
     <value>Carottes</value>
   </data>
+  <data name="Categorieën" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="Fruit" xml:space="preserve">
+    <value>Fruit</value>
+  </data>
+  <data name="Voedselkalender" xml:space="preserve">
+    <value>(Voedselkalender)</value>
+  </data>
 </root>

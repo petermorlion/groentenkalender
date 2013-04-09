@@ -7,39 +7,31 @@
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
-    d:DataContext="{d:DesignData SampleData/SampleMonthViewModel.xaml}"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
-    <phone:PhoneApplicationPage.Resources>
-        <DataTemplate x:Key="MonthPivotItemTemplate">
-            <controls:PivotItem Header="{Binding Name}">
-                <!--Double line list with text wrapping-->
-                <ListBox x:Name="FirstListBox" Margin="0,0,-12,0" ItemsSource="{Binding FoodItems}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="0,0,0,17" Width="432" Height="45">
-                                <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextLargeStyle}"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </controls:PivotItem>
-        </DataTemplate>
-    </phone:PhoneApplicationPage.Resources>
+    shell:SystemTray.IsVisible="False">
 
-    <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <!--Pivot Control-->
-        <controls:Pivot Title="Groentenwijzer" 
-                        x:Name="MainPivot" 
-                        ItemsSource="{Binding AllMonths}" 
-                        ItemTemplate="{StaticResource MonthPivotItemTemplate}"
-                        SelectedIndex="{Binding SelectedMonth, Mode=TwoWay}">
-        </controls:Pivot>
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <controls:Panorama Title="Voedselkalender">
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="Categorieën">
+                <StackPanel>
+                    <HyperlinkButton Content="Fruit" x:Name="FruitHyperlinkButton" />
+                    <HyperlinkButton Content="Groenten" x:Name="VegetablesHyperlinkButton" />
+                    <HyperlinkButton Content="Alles" x:Name="AllHyperlinkButton" />
+                </StackPanel>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="item2">
+                <Grid/>
+            </controls:PanoramaItem>
+        </controls:Panorama>
     </Grid>
- 
+
 </phone:PhoneApplicationPage>

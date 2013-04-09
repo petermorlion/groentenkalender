@@ -17,19 +17,19 @@ namespace Groentenwijzer
 {
     public partial class App : Application
     {
-        //private static MainViewModel viewModel = null;
+        //private static FoodByMonthViewModel viewModel = null;
 
         ///// <summary>
         ///// A static ViewModel used by the views to bind against.
         ///// </summary>
-        ///// <returns>The MainViewModel object.</returns>
-        //public static MainViewModel ViewModel
+        ///// <returns>The FoodByMonthViewModel object.</returns>
+        //public static FoodByMonthViewModel ViewModel
         //{
         //    get
         //    {
         //        // Delay creation of the view model until necessary
         //        if (viewModel == null)
-        //            viewModel = new MainViewModel();
+        //            viewModel = new FoodByMonthViewModel();
 
         //        return viewModel;
         //    }

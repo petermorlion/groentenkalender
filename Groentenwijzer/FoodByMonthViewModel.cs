@@ -7,12 +7,12 @@ using Groentenwijzer.SampleData;
 
 namespace Groentenwijzer
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class FoodByMonthViewModel : INotifyPropertyChanged
     {
         private int _selectedMonth;
         private IEnumerable<FoodType> _foodTypes;
 
-        public MainViewModel(IEnumerable<FoodType> foodTypes)
+        public FoodByMonthViewModel(IEnumerable<FoodType> foodTypes)
         {
             _foodTypes = foodTypes;
             _selectedMonth = DateTime.Now.Month - 1;
