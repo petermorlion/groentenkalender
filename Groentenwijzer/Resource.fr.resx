@@ -297,6 +297,9 @@
   <data name="Categories" xml:space="preserve">
     <value>Catégories</value>
   </data>
+  <data name="Foodcalendar" xml:space="preserve">
+    <value>(Calendrier de nourriture)</value>
+  </data>
   <data name="Vegetables" xml:space="preserve">
     <value>Végétables</value>
   </data>

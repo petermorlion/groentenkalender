@@ -79,6 +79,15 @@ namespace Groentenwijzer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Voedselkalender.
+        /// </summary>
+        public static string Foodcalendar {
+            get {
+                return ResourceManager.GetString("Foodcalendar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fruit.
         /// </summary>
         public static string Fruit {

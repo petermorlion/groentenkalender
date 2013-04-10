@@ -34,7 +34,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <controls:Pivot Title="Groentenwijzer" 
+        <controls:Pivot Title="{Binding Path=Resource.Foodcalendar, Source={StaticResource LocalizedStrings}}" 
                         x:Name="MainPivot" 
                         ItemsSource="{Binding AllMonths}" 
                         ItemTemplate="{StaticResource MonthPivotItemTemplate}"
