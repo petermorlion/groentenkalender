@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
+using Groentenwijzer.SampleData;
 using Microsoft.Phone.Controls;
 
 namespace Groentenwijzer
@@ -18,9 +9,17 @@ namespace Groentenwijzer
         public MainPage()
         {
             InitializeComponent();
-            FruitHyperlinkButton.NavigateUri = new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Fruit", UriKind.Relative);
-            VegetablesHyperlinkButton.NavigateUri = new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative);
-            AllHyperlinkButton.NavigateUri = new Uri("/Groentenwijzer;component/FoodByMonthView.xaml", UriKind.Relative);
+
+            Fruit.Initialize();
+            Vegetables.Initialize();
+
+            FruitButton.Content = Resource.ResourceManager.GetString("Fruit") ?? FruitButton.Content;
+            VegetablesButton.Content = Resource.ResourceManager.GetString("Groenten") ?? FruitButton.Content;
+            AllButton.Content = Resource.ResourceManager.GetString("Alles") ?? FruitButton.Content;
+
+            FruitButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Fruit", UriKind.Relative));
+            VegetablesButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative));
+            AllButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml", UriKind.Relative));
         }
     }
 }

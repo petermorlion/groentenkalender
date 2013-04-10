@@ -4,9 +4,21 @@ namespace Groentenwijzer.SampleData
 {
     public static class Fruit
     {
+        private static IList<FoodItem> _data;
+
         public static IList<FoodItem> All()
         {
-            return new List<FoodItem>
+            if (_data == null)
+            {
+                Initialize();
+            }
+
+            return _data;
+        }
+
+        public static void Initialize()
+        {
+            _data = new List<FoodItem>
                        {
                            new FoodItem { Name = "Aardbeien", Months = new List<int> { 5, 6, 7, 8 } },
                            new FoodItem { Name = "Abrikozen", Months = new List<int> { 6, 7, 8 } },

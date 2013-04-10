@@ -59,5 +59,32 @@ namespace Groentenwijzer {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alles.
+        /// </summary>
+        internal static string Alles {
+            get {
+                return ResourceManager.GetString("Alles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fruit.
+        /// </summary>
+        internal static string Fruit {
+            get {
+                return ResourceManager.GetString("Fruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Groenten.
+        /// </summary>
+        internal static string Groenten {
+            get {
+                return ResourceManager.GetString("Groenten", resourceCulture);
+            }
+        }
     }
 }

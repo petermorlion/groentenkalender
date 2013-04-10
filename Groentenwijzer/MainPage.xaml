@@ -13,17 +13,23 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
+    <phone:PhoneApplicationPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
 
-    <!--LayoutRoot contains the root grid where all other page content is placed-->
+            <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
         <controls:Panorama Title="Voedselkalender">
 
             <!--Panorama item one-->
             <controls:PanoramaItem Header="Categorieën">
                 <StackPanel>
-                    <HyperlinkButton Content="Fruit" x:Name="FruitHyperlinkButton" />
-                    <HyperlinkButton Content="Groenten" x:Name="VegetablesHyperlinkButton" />
-                    <HyperlinkButton Content="Alles" x:Name="AllHyperlinkButton" />
+                    <Button Content="Fruit" x:Name="FruitButton" />
+                    <Button Content="Groenten" x:Name="VegetablesButton" />
+                    <Button Content="Alles" x:Name="AllButton" />
                 </StackPanel>
             </controls:PanoramaItem>
 
