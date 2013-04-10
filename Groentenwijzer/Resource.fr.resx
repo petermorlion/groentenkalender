@@ -291,10 +291,13 @@
   <data name="Voedselkalender" xml:space="preserve">
     <value>(Voedselkalender)</value>
   </data>
-  <data name="Alles" xml:space="preserve">
+  <data name="All" xml:space="preserve">
     <value>Tout</value>
   </data>
-  <data name="Groenten" xml:space="preserve">
+  <data name="Categories" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="Vegetables" xml:space="preserve">
     <value>Végétables</value>
   </data>
 </root>

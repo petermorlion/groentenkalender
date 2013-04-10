@@ -25,17 +25,17 @@
         <controls:Panorama Title="Voedselkalender">
 
             <!--Panorama item one-->
-            <controls:PanoramaItem Header="Categorieën">
+            <controls:PanoramaItem Header="{Binding Path=Resource.Categories, Source={StaticResource LocalizedStrings}}">
                 <StackPanel>
-                    <Button Content="Fruit" x:Name="FruitButton" />
-                    <Button Content="Groenten" x:Name="VegetablesButton" />
-                    <Button Content="Alles" x:Name="AllButton" />
+                    <Button Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitButton" />
+                    <Button Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesButton" />
+                    <Button Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllButton" />
                 </StackPanel>
             </controls:PanoramaItem>
 
             <!--Panorama item two-->
-            <controls:PanoramaItem Header="item2">
-                <Grid/>
+            <controls:PanoramaItem Header="Info">
+                
             </controls:PanoramaItem>
         </controls:Panorama>
     </Grid>

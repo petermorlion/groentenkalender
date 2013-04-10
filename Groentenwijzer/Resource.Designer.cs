@@ -22,7 +22,7 @@ namespace Groentenwijzer {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
+    public class Resource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Groentenwijzer {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Groentenwijzer.Resource", typeof(Resource).Assembly);
@@ -51,7 +51,7 @@ namespace Groentenwijzer {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,16 +63,25 @@ namespace Groentenwijzer {
         /// <summary>
         ///   Looks up a localized string similar to Alles.
         /// </summary>
-        internal static string Alles {
+        public static string All {
             get {
-                return ResourceManager.GetString("Alles", resourceCulture);
+                return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categorieën.
+        /// </summary>
+        public static string Categories {
+            get {
+                return ResourceManager.GetString("Categories", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fruit.
         /// </summary>
-        internal static string Fruit {
+        public static string Fruit {
             get {
                 return ResourceManager.GetString("Fruit", resourceCulture);
             }
@@ -81,9 +90,9 @@ namespace Groentenwijzer {
         /// <summary>
         ///   Looks up a localized string similar to Groenten.
         /// </summary>
-        internal static string Groenten {
+        public static string Vegetables {
             get {
-                return ResourceManager.GetString("Groenten", resourceCulture);
+                return ResourceManager.GetString("Vegetables", resourceCulture);
             }
         }
     }
