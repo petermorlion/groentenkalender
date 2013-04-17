@@ -291,6 +291,12 @@
   <data name="Voedselkalender" xml:space="preserve">
     <value>(Voedselkalender)</value>
   </data>
+  <data name="About" xml:space="preserve">
+    <value>Cet app est basé sur le calendrier de Velt vzw.
+
+Dévelopé par Peter Morlion
+Version 1.0.0</value>
+  </data>
   <data name="All" xml:space="preserve">
     <value>Tout</value>
   </data>

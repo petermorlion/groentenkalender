@@ -12,10 +12,22 @@ namespace Groentenwijzer
 
             Fruit.Initialize();
             Vegetables.Initialize();
+        }
 
-            FruitButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Fruit", UriKind.Relative));
-            VegetablesButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative));
-            AllButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml", UriKind.Relative));
+        private void ListBox_SelectionChanged_1(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (CategoriesListBox.SelectedItem == FruitItem)
+            {
+                NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Fruit", UriKind.Relative));
+            }
+            else if (CategoriesListBox.SelectedItem == VegetablesItem)
+            {
+                NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative));
+            }
+            else if (CategoriesListBox.SelectedItem == AllItem)
+            {
+                NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml", UriKind.Relative));
+            }
         }
     }
 }

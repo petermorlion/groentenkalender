@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
+
+Zit eraan te komen:
+- Informatie over de verschillende groenten en fruit
+- Franstalige versie
+- Een andere naam
+
+Ontwikkeld door Peter Morlion
+Versie 1.1.0</value>
+  </data>
   <data name="All" xml:space="preserve">
     <value>Alles</value>
   </data>

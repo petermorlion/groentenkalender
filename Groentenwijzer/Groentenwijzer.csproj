@@ -16,7 +16,8 @@
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>fr</SupportedCultures>
+    <SupportedCultures>
+    </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>Groentenwijzer.xap</XapFilename>
@@ -84,6 +85,7 @@
     <Compile Include="SampleData\Fruit.cs" />
     <Compile Include="SampleData\FoodItem.cs" />
     <Compile Include="SampleData\Vegetables.cs" />
+    <Compile Include="TiltEffect.cs" />
     <Compile Include="ViewModels\MonthViewModel.cs" />
     <Compile Include="ViewModels\FoodItemViewModel.cs" />
   </ItemGroup>

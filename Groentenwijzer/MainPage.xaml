@@ -7,16 +7,26 @@
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:Groentenwijzer"
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False">
+    shell:SystemTray.IsVisible="False"
+    local:TiltEffect.IsTiltEnabled="True">
     <phone:PhoneApplicationPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Padding" Value="0" />
             <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="35" />
+        </Style>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="FontSize" Value="35" />
+            <Setter Property="Padding" Value="11" />
         </Style>
     </phone:PhoneApplicationPage.Resources>
 
@@ -27,15 +37,17 @@
             <!--Panorama item one-->
             <controls:PanoramaItem Header="{Binding Path=Resource.Categories, Source={StaticResource LocalizedStrings}}">
                 <StackPanel>
-                    <Button Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitButton" />
-                    <Button Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesButton" />
-                    <Button Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllButton" />
+                    <ListBox SelectionChanged="ListBox_SelectionChanged_1" x:Name="CategoriesListBox">
+                        <ListBoxItem Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitItem" />
+                        <ListBoxItem Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesItem" />
+                        <ListBoxItem Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllItem" />
+                    </ListBox>
                 </StackPanel>
             </controls:PanoramaItem>
 
             <!--Panorama item two-->
             <controls:PanoramaItem Header="Info">
-                
+                <TextBlock TextWrapping="Wrap" Text="{Binding Path=Resource.About, Source={StaticResource LocalizedStrings}}" />
             </controls:PanoramaItem>
         </controls:Panorama>
     </Grid>
