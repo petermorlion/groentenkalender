@@ -16,17 +16,20 @@
     shell:SystemTray.IsVisible="False"
     local:TiltEffect.IsTiltEnabled="True">
     <phone:PhoneApplicationPage.Resources>
-        <Style TargetType="Button">
+        <Style TargetType="HyperlinkButton">
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="HorizontalContentAlignment" Value="Left" />
             <Setter Property="Margin" Value="0" />
-            <Setter Property="Padding" Value="0" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="FontSize" Value="35" />
-        </Style>
-        <Style TargetType="ListBoxItem">
-            <Setter Property="FontSize" Value="35" />
-            <Setter Property="Padding" Value="11" />
+            <Setter Property="FontFamily" Value="Segoe UI Light" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="HyperlinkButton">
+                        <TextBlock Text="{TemplateBinding Content}" Padding="10, 20" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
     </phone:PhoneApplicationPage.Resources>
 
@@ -37,11 +40,9 @@
             <!--Panorama item one-->
             <controls:PanoramaItem Header="{Binding Path=Resource.Categories, Source={StaticResource LocalizedStrings}}">
                 <StackPanel>
-                    <ListBox SelectionChanged="ListBox_SelectionChanged_1" x:Name="CategoriesListBox">
-                        <ListBoxItem Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitItem" />
-                        <ListBoxItem Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesItem" />
-                        <ListBoxItem Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllItem" />
-                    </ListBox>
+                    <HyperlinkButton Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitButton" />
+                    <HyperlinkButton Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesButton" />
+                    <HyperlinkButton Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllButton" />
                 </StackPanel>
             </controls:PanoramaItem>
 
