@@ -62,6 +62,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FoodDetailView.xaml.cs">
+      <DependentUpon>FoodDetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FoodType.cs" />
     <Compile Include="FoodByMonthView.xaml.cs">
       <DependentUpon>FoodByMonthView.xaml</DependentUpon>
@@ -95,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="FoodByMonthView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FoodDetailView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
