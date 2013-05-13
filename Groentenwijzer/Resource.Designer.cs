@@ -63,10 +63,13 @@ namespace Groentenwijzer {
         /// <summary>
         ///   Looks up a localized string similar to Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
         ///
-        ///Zit eraan te komen:
+        ///De volgende verbeteringen wil ik er graag aan toevoegen:
         ///- Informatie over de verschillende groenten en fruit
         ///- Franstalige versie
         ///- Een andere naam
+        ///- Afbeeldingen
+        ///
+        ///Ik lees de reviews, dus geef gerust opmerkingen!
         ///
         ///Ontwikkeld door Peter Morlion
         ///Versie 1.1.0.
