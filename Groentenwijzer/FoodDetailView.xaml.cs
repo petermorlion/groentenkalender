@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Microsoft.Phone.Controls;
 
 namespace Groentenwijzer
@@ -13,7 +14,10 @@ namespace Groentenwijzer
 
         private void FoodDetailView_Loaded(object sender, RoutedEventArgs e)
         {
-            FoodItemTitle.Text = NavigationContext.QueryString["FoodName"];
+            var foodName = NavigationContext.QueryString["FoodName"];
+            FoodItemTitle.Text = foodName;
+            var uriString = string.Format("http://nl.wikipedia.org/wiki/{0}", foodName);
+            WebBrowser.Navigate(new Uri(uriString));
         }
     }
 }
