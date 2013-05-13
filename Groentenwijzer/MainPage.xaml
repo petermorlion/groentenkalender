@@ -15,23 +15,6 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False"
     local:TiltEffect.IsTiltEnabled="True">
-    <phone:PhoneApplicationPage.Resources>
-        <Style TargetType="HyperlinkButton">
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="HorizontalContentAlignment" Value="Left" />
-            <Setter Property="Margin" Value="0" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="FontSize" Value="35" />
-            <Setter Property="FontFamily" Value="Segoe UI Light" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="HyperlinkButton">
-                        <TextBlock Text="{TemplateBinding Content}" Padding="10, 20" />
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </phone:PhoneApplicationPage.Resources>
 
             <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">

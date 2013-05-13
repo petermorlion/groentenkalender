@@ -36,5 +36,12 @@ namespace Groentenwijzer
 
             MainPivot.DataContext = new FoodByMonthViewModel(foodTypes);
         }
+
+        private void FoodItem_Click(object sender, RoutedEventArgs e)
+        {
+            var hyperlinkButton = (HyperlinkButton) sender;
+            var uriString = string.Format("/Groentenwijzer;component/FoodDetailView.xaml?FoodName={0}", hyperlinkButton.Content);
+            NavigationService.Navigate(new Uri(uriString, UriKind.Relative));
+        }
     }
 }
