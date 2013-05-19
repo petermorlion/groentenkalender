@@ -15,8 +15,10 @@ namespace Groentenwijzer
         private void FoodDetailView_Loaded(object sender, RoutedEventArgs e)
         {
             var foodName = NavigationContext.QueryString["FoodName"];
+            var wikipediaKey = NavigationContext.QueryString["WikipediaKey"];
             FoodItemTitle.Text = foodName;
-            var uriString = string.Format("http://nl.wikipedia.org/wiki/{0}", foodName);
+            // TODO: parameterize nl, so fr can be added
+            var uriString = string.Format("http://nl.wikipedia.org/wiki/{0}", wikipediaKey);
             WebBrowser.Navigate(new Uri(uriString));
         }
     }

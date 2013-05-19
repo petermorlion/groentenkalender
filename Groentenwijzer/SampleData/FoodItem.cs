@@ -7,5 +7,7 @@ namespace Groentenwijzer.SampleData
         public string Name { get; set; }
 
         public List<int> Months { get; set; }
+
+        public string WikipediaKey { get; set; }
     }
 }

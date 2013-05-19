@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
@@ -40,7 +41,22 @@ namespace Groentenwijzer
         private void FoodItem_Click(object sender, RoutedEventArgs e)
         {
             var hyperlinkButton = (HyperlinkButton) sender;
-            var uriString = string.Format("/Groentenwijzer;component/FoodDetailView.xaml?FoodName={0}", hyperlinkButton.Content);
+            var selectedFoodType = (FoodType)Enum.Parse(typeof(FoodType), NavigationContext.QueryString["FoodType"], true);
+            string wikipediaKey;
+            if (selectedFoodType == FoodType.Vegetable)
+            {
+                wikipediaKey = Vegetables.All().Single(x => x.Name == hyperlinkButton.Content.ToString()).WikipediaKey;
+            }
+            else if (selectedFoodType == FoodType.Fruit)
+            {
+                wikipediaKey = Fruit.All().Single(x => x.Name == hyperlinkButton.Content.ToString()).WikipediaKey;
+            }
+            else
+            {
+                throw new Exception("Unknown food type");
+            }
+
+            var uriString = string.Format("/Groentenwijzer;component/FoodDetailView.xaml?FoodName={0}&WikipediaKey={1}", hyperlinkButton.Content, wikipediaKey);
             NavigationService.Navigate(new Uri(uriString, UriKind.Relative));
         }
     }
