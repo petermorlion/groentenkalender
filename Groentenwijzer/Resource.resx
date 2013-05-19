@@ -121,7 +121,6 @@
     <value>Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
 
 De volgende verbeteringen wil ik er graag aan toevoegen:
-- Informatie over de verschillende groenten en fruit
 - Franstalige versie
 - Een andere naam
 - Afbeeldingen
@@ -129,7 +128,7 @@ De volgende verbeteringen wil ik er graag aan toevoegen:
 Ik lees de reviews, dus geef gerust opmerkingen!
 
 Ontwikkeld door Peter Morlion
-Versie 1.1.0</value>
+Versie 1.2.0</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Alles</value>
