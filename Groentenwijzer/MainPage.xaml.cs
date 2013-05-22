@@ -20,7 +20,7 @@ namespace Groentenwijzer
 
         private void OnAboutIconClicked(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Groentenwijzer;component/AboutView.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Groentenwijzer;component/About.xaml", UriKind.Relative));
         }
     }
 }
