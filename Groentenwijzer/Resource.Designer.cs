@@ -71,9 +71,16 @@ namespace Groentenwijzer {
         ///Ik lees de reviews, dus geef gerust opmerkingen!
         ///
         ///Ontwikkeld door Peter Morlion
-        ///Versie 1.2.0
+        ///Huidige versie: 1.3.0
         ///
         ///Updates:
+        ///1.3.0
+        ///- Aparte info-pagina via app-bar
+        ///- Beoordeel link in app-bar
+        ///
+        ///1.2.1
+        ///- Bugfix
+        ///
         ///1.2.0
         ///- Doorklikken naar Wikipedia
         ///
@@ -82,7 +89,7 @@ namespace Groentenwijzer {
         ///- Info pagina toegevoegd
         ///
         ///1.0.0
-        ///- Enkel groenten.
+        ///- Enkel groent [rest of string was truncated]&quot;;.
         /// </summary>
         public static string About {
             get {
@@ -132,6 +139,24 @@ namespace Groentenwijzer {
         public static string Fruit {
             get {
                 return ResourceManager.GetString("Fruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to info.
+        /// </summary>
+        public static string info {
+            get {
+                return ResourceManager.GetString("info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to beoordeel.
+        /// </summary>
+        public static string rate {
+            get {
+                return ResourceManager.GetString("rate", resourceCulture);
             }
         }
         

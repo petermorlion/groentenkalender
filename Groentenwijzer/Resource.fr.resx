@@ -295,9 +295,16 @@
     <value>Cet app est basé sur le calendrier de Velt vzw.
 
 Dévelopé par Peter Morlion
-Version 1.2.0
+Version 1.3.0
 
 Updates:
+1.3.0
+- Page d'info apart
+- Review link dans le app-bar
+
+1.2.1
+- Bugfix
+
 1.2.0
 - Doorklikken naar Wikipedia
 
@@ -322,5 +329,11 @@ Updates:
   </data>
   <data name="AboutTitle" xml:space="preserve">
     <value>Info</value>
+  </data>
+  <data name="info" xml:space="preserve">
+    <value>info</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>(beoordeel)</value>
   </data>
 </root>

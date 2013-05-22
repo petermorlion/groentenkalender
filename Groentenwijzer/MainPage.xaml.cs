@@ -1,6 +1,7 @@
 ﻿using System;
 using Groentenwijzer.SampleData;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Tasks;
 
 namespace Groentenwijzer
 {
@@ -21,6 +22,12 @@ namespace Groentenwijzer
         private void OnAboutIconClicked(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/Groentenwijzer;component/About.xaml", UriKind.Relative));
+        }
+
+        private void OnRateIconClicked(object sender, EventArgs e)
+        {
+            var task = new MarketplaceReviewTask();
+            task.Show();
         }
     }
 }

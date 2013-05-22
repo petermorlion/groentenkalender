@@ -134,6 +134,7 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="favs.png" />
     <Content Include="i.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>

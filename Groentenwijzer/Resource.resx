@@ -128,9 +128,16 @@ De volgende verbeteringen wil ik er graag aan toevoegen:
 Ik lees de reviews, dus geef gerust opmerkingen!
 
 Ontwikkeld door Peter Morlion
-Versie 1.2.0
+Huidige versie: 1.3.0
 
 Updates:
+1.3.0
+- Aparte info-pagina via app-bar
+- Beoordeel link in app-bar
+
+1.2.1
+- Bugfix
+
 1.2.0
 - Doorklikken naar Wikipedia
 
@@ -155,6 +162,12 @@ Updates:
   </data>
   <data name="Fruit" xml:space="preserve">
     <value>Fruit</value>
+  </data>
+  <data name="info" xml:space="preserve">
+    <value>info</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>beoordeel</value>
   </data>
   <data name="Vegetables" xml:space="preserve">
     <value>Groenten</value>
