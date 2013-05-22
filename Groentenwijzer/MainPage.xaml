@@ -17,23 +17,31 @@
     local:TiltEffect.IsTiltEnabled="True">
 
             <!--LayoutRoot contains the root grid where all other page content is placed-->
-    <Grid x:Name="LayoutRoot">
-        <controls:Panorama Title="{Binding Path=Resource.Foodcalendar, Source={StaticResource LocalizedStrings}}">
-            
-            <!--Panorama item one-->
-            <controls:PanoramaItem Header="{Binding Path=Resource.Categories, Source={StaticResource LocalizedStrings}}">
-                <StackPanel>
-                    <HyperlinkButton Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitButton" />
-                    <HyperlinkButton Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesButton" />
-                    <HyperlinkButton Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllButton" />
-                </StackPanel>
-            </controls:PanoramaItem>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <!--Panorama item two-->
-            <controls:PanoramaItem Header="Info">
-                <TextBlock TextWrapping="Wrap" Text="{Binding Path=Resource.About, Source={StaticResource LocalizedStrings}}" />
-            </controls:PanoramaItem>
-        </controls:Panorama>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=Resource.Foodcalendar, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <HyperlinkButton Content="{Binding Path=Resource.Fruit, Source={StaticResource LocalizedStrings}}" x:Name="FruitButton" />
+                <HyperlinkButton Content="{Binding Path=Resource.Vegetables, Source={StaticResource LocalizedStrings}}" x:Name="VegetablesButton" />
+                <HyperlinkButton Content="{Binding Path=Resource.All, Source={StaticResource LocalizedStrings}}" x:Name="AllButton" />
+            </StackPanel>
+        </Grid>
     </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/i.png" Click="OnAboutIconClicked" Text="info"></shell:ApplicationBarIconButton>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

@@ -128,7 +128,21 @@ De volgende verbeteringen wil ik er graag aan toevoegen:
 Ik lees de reviews, dus geef gerust opmerkingen!
 
 Ontwikkeld door Peter Morlion
-Versie 1.2.0</value>
+Versie 1.2.0
+
+Updates:
+1.2.0
+- Doorklikken naar Wikipedia
+
+1.1.0
+- Fruit toegevoegd
+- Info pagina toegevoegd
+
+1.0.0
+- Enkel groenten</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Info</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Alles</value>

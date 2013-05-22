@@ -295,7 +295,18 @@
     <value>Cet app est basé sur le calendrier de Velt vzw.
 
 Dévelopé par Peter Morlion
-Version 1.0.0</value>
+Version 1.2.0
+
+Updates:
+1.2.0
+- Doorklikken naar Wikipedia
+
+1.1.0
+- Fruit toegevoegd
+- Info pagina toegevoegd
+
+1.0.0
+- Enkel groenten</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Tout</value>
@@ -308,5 +319,8 @@ Version 1.0.0</value>
   </data>
   <data name="Vegetables" xml:space="preserve">
     <value>Végétables</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Info</value>
   </data>
 </root>

@@ -71,11 +71,31 @@ namespace Groentenwijzer {
         ///Ik lees de reviews, dus geef gerust opmerkingen!
         ///
         ///Ontwikkeld door Peter Morlion
-        ///Versie 1.2.0.
+        ///Versie 1.2.0
+        ///
+        ///Updates:
+        ///1.2.0
+        ///- Doorklikken naar Wikipedia
+        ///
+        ///1.1.0
+        ///- Fruit toegevoegd
+        ///- Info pagina toegevoegd
+        ///
+        ///1.0.0
+        ///- Enkel groenten.
         /// </summary>
         public static string About {
             get {
                 return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        public static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
             }
         }
         

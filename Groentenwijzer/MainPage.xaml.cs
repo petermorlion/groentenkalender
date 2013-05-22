@@ -17,5 +17,10 @@ namespace Groentenwijzer
             VegetablesButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative));
             AllButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml", UriKind.Relative));
         }
+
+        private void OnAboutIconClicked(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Groentenwijzer;component/AboutView.xaml", UriKind.Relative));
+        }
     }
 }
