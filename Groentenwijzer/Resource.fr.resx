@@ -139,13 +139,13 @@
     <value>Août</value>
   </data>
   <data name="Bleekselder" xml:space="preserve">
-    <value>(Bleekselder)</value>
+    <value>Céleri blanc</value>
   </data>
   <data name="Bloemkool" xml:space="preserve">
-    <value>Chou fleur</value>
+    <value>Chou-fleur</value>
   </data>
   <data name="Broccoli" xml:space="preserve">
-    <value>Broccoli</value>
+    <value>Brocoli</value>
   </data>
   <data name="Chinese_kool" xml:space="preserve">
     <value>Chou chinois</value>
@@ -163,7 +163,7 @@
     <value>Février</value>
   </data>
   <data name="Groene_selder" xml:space="preserve">
-    <value>(Groene selder)</value>
+    <value>Céleri vert</value>
   </data>
   <data name="Januari" xml:space="preserve">
     <value>Janvier</value>
@@ -175,16 +175,16 @@
     <value>Juin</value>
   </data>
   <data name="Knolselder" xml:space="preserve">
-    <value>(Knolselder)</value>
+    <value>Céleri-rave</value>
   </data>
   <data name="Komkommer" xml:space="preserve">
     <value>Comcombre</value>
   </data>
   <data name="Koolrabi" xml:space="preserve">
-    <value>(Koolrabi)</value>
+    <value>Chou-rave</value>
   </data>
   <data name="Kropsla" xml:space="preserve">
-    <value>(Kropsla)</value>
+    <value>Laitue</value>
   </data>
   <data name="Maart" xml:space="preserve">
     <value>Mars</value>
@@ -205,58 +205,58 @@
     <value>Champignons</value>
   </data>
   <data name="Paprika" xml:space="preserve">
-    <value>(Paprika)</value>
+    <value>Poivron</value>
   </data>
   <data name="Pastinaak" xml:space="preserve">
-    <value>(Pastinaak)</value>
+    <value>Panais</value>
   </data>
   <data name="Pompoen" xml:space="preserve">
     <value>Citrouille</value>
   </data>
   <data name="Prei" xml:space="preserve">
-    <value>(Prei)</value>
+    <value>Poireau</value>
   </data>
   <data name="Prinsessenbonen" xml:space="preserve">
-    <value>(Prinsessenbonen)</value>
+    <value>Haricots verts</value>
   </data>
   <data name="Raap" xml:space="preserve">
-    <value>(Raap)</value>
+    <value>Navet</value>
   </data>
   <data name="Raapstelen" xml:space="preserve">
-    <value>(Raapstelen)</value>
+    <value>Navette d'été</value>
   </data>
   <data name="Radijs" xml:space="preserve">
     <value>Radis</value>
   </data>
   <data name="Rammenas" xml:space="preserve">
-    <value>(Rammenas)</value>
+    <value>Radis noir</value>
   </data>
   <data name="Rodekool" xml:space="preserve">
-    <value>(Rodekool)</value>
+    <value>Chou rouge</value>
   </data>
   <data name="Rode_biet" xml:space="preserve">
-    <value>(Rode biet)</value>
+    <value>Betterave</value>
   </data>
   <data name="Savooikool" xml:space="preserve">
-    <value>(Savooikool)</value>
+    <value>Chou de Milan</value>
   </data>
   <data name="Schorseneren" xml:space="preserve">
-    <value>(Schorseneren)</value>
+    <value>Scorsonère</value>
   </data>
   <data name="Septebmer" xml:space="preserve">
     <value>Septembre</value>
   </data>
   <data name="Snijbonen" xml:space="preserve">
-    <value>(Snijbonen)</value>
+    <value>Haricots</value>
   </data>
   <data name="Spinazie" xml:space="preserve">
     <value>Epinards</value>
   </data>
   <data name="Spitskool" xml:space="preserve">
-    <value>(Spitskool)</value>
+    <value>Chou</value>
   </data>
   <data name="Spruiten" xml:space="preserve">
-    <value>(Spruiten)</value>
+    <value>Chou de Bruxelles</value>
   </data>
   <data name="Tomaten" xml:space="preserve">
     <value>Tomates</value>
@@ -265,19 +265,19 @@
     <value>Oignons</value>
   </data>
   <data name="Veldsla" xml:space="preserve">
-    <value>(Veldsla)</value>
+    <value>Mâche</value>
   </data>
   <data name="Venkel" xml:space="preserve">
-    <value>(Venkel)</value>
+    <value>Fenouil</value>
   </data>
   <data name="Warmoes" xml:space="preserve">
-    <value>(Warmoes)</value>
+    <value>Blette</value>
   </data>
   <data name="Witlof" xml:space="preserve">
-    <value>(Witlof)</value>
+    <value>Endive</value>
   </data>
   <data name="Wittekool" xml:space="preserve">
-    <value>(Wittekool)</value>
+    <value>Chou blanc</value>
   </data>
   <data name="Wortelen" xml:space="preserve">
     <value>Carottes</value>
@@ -294,10 +294,16 @@
   <data name="About" xml:space="preserve">
     <value>Cet app est basé sur le calendrier de Velt vzw.
 
+Je lis les reviews, donc n'hésitez pas de donner des remarques!
+Si vous trouvez des fautes, contactez moi sur peter.morlion@live.be (parce que le français n'est pas ma langue maternelle).
+	
 Dévelopé par Peter Morlion
-Version 1.3.0
+Version 1.4.0
 
 Updates:
+1.4.0
+- Version français
+
 1.3.0
 - Page d'info apart
 - Review link dans le app-bar
@@ -306,14 +312,14 @@ Updates:
 - Bugfix
 
 1.2.0
-- Doorklikken naar Wikipedia
+- Liens vers Wikipedia
 
 1.1.0
-- Fruit toegevoegd
-- Info pagina toegevoegd
+- Ajouté des fruits
+- Ajouté page d'info
 
 1.0.0
-- Enkel groenten</value>
+- Légumes</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Tout</value>
