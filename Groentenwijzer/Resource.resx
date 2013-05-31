@@ -170,4 +170,7 @@ Updates:
   <data name="Vegetables" xml:space="preserve">
     <value>Groenten</value>
   </data>
+  <data name="wikipediaBaseUri" xml:space="preserve">
+    <value>http://nl.wikipedia.org/wiki/{0}</value>
+  </data>
 </root>

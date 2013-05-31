@@ -63,17 +63,15 @@ namespace Groentenwijzer {
         /// <summary>
         ///   Looks up a localized string similar to Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
         ///
-        ///De volgende verbeteringen wil ik er graag aan toevoegen:
-        ///- Franstalige versie
-        ///- Een andere naam
-        ///- Afbeeldingen
-        ///
         ///Ik lees de reviews, dus geef gerust opmerkingen!
         ///
         ///Ontwikkeld door Peter Morlion
-        ///Huidige versie: 1.3.0
+        ///Huidige versie: 1.4.0
         ///
         ///Updates:
+        ///1.4.0
+        ///- Franse versie
+        ///
         ///1.3.0
         ///- Aparte info-pagina via app-bar
         ///- Beoordeel link in app-bar
@@ -89,7 +87,7 @@ namespace Groentenwijzer {
         ///- Info pagina toegevoegd
         ///
         ///1.0.0
-        ///- Enkel groent [rest of string was truncated]&quot;;.
+        ///- Enkel groenten.
         /// </summary>
         public static string About {
             get {
@@ -166,6 +164,15 @@ namespace Groentenwijzer {
         public static string Vegetables {
             get {
                 return ResourceManager.GetString("Vegetables", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://nl.wikipedia.org/wiki/{0}.
+        /// </summary>
+        public static string wikipediaBaseUri {
+            get {
+                return ResourceManager.GetString("wikipediaBaseUri", resourceCulture);
             }
         }
     }

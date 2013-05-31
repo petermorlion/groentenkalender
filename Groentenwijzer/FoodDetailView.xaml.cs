@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows;
 using Microsoft.Phone.Controls;
 
@@ -17,8 +18,9 @@ namespace Groentenwijzer
             var foodName = NavigationContext.QueryString["FoodName"];
             var wikipediaKey = NavigationContext.QueryString["WikipediaKey"];
             FoodItemTitle.Text = foodName;
-            // TODO: parameterize nl, so fr can be added
-            var uriString = string.Format("http://nl.wikipedia.org/wiki/{0}", wikipediaKey);
+            
+            var wikipediaBaseUriString = Resource.ResourceManager.GetString("wikipediaBaseUri");
+            var uriString = string.Format(wikipediaBaseUriString, wikipediaKey);
             WebBrowser.Navigate(new Uri(uriString));
         }
     }

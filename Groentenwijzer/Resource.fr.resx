@@ -342,4 +342,7 @@ Updates:
   <data name="rate" xml:space="preserve">
     <value>(beoordeel)</value>
   </data>
+  <data name="wikipediaBaseUri" xml:space="preserve">
+    <value>http://fr.wikipedia.org/wiki/{0}</value>
+  </data>
 </root>
