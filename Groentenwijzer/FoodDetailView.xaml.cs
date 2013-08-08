@@ -17,10 +17,11 @@ namespace Groentenwijzer
         {
             var foodName = NavigationContext.QueryString["FoodName"];
             var wikipediaKey = NavigationContext.QueryString["WikipediaKey"];
+            var wikipediaKeyTranslated = WikipediaKeys.ResourceManager.GetString(wikipediaKey) ?? wikipediaKey;
             FoodItemTitle.Text = foodName;
             
             var wikipediaBaseUriString = Resource.ResourceManager.GetString("wikipediaBaseUri");
-            var uriString = string.Format(wikipediaBaseUriString, wikipediaKey);
+            var uriString = string.Format(wikipediaBaseUriString, wikipediaKeyTranslated);
             WebBrowser.Navigate(new Uri(uriString));
         }
     }

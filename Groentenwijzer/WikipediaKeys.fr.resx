@@ -117,69 +117,196 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
-
-Ik lees de reviews, dus geef gerust opmerkingen!
-
-Ontwikkeld door Peter Morlion
-Huidige versie: 1.4.0
-
-Updates:
-1.4.0
-- Franse versie
-
-1.3.0
-- Aparte info-pagina via app-bar
-- Beoordeel link in app-bar
-
-1.2.1
-- Bugfix
-
-1.2.0
-- Doorklikken naar Wikipedia
-
-1.1.0
-- Fruit toegevoegd
-- Info pagina toegevoegd
-
-1.0.0
-- Enkel groenten</value>
+  <data name="Aardappel" xml:space="preserve">
+    <value>Pomme_de_terre</value>
   </data>
-  <data name="AboutTitle" xml:space="preserve">
-    <value>Info</value>
+  <data name="Andijvie" xml:space="preserve">
+    <value>Chicorée_endive</value>
   </data>
-  <data name="All" xml:space="preserve">
-    <value>Alles</value>
+  <data name="Artisjok" xml:space="preserve">
+    <value>Artichaut</value>
   </data>
-  <data name="Categories" xml:space="preserve">
-    <value>Categorieën</value>
+  <data name="Asperge" xml:space="preserve">
+    <value>Asperge</value>
   </data>
-  <data name="Foodcalendar" xml:space="preserve">
-    <value>Voedselkalender</value>
+  <data name="Aubergine_plant" xml:space="preserve">
+    <value>Aubergine</value>
   </data>
-  <data name="Fruit" xml:space="preserve">
-    <value>Fruit</value>
+  <data name="Bleekselderij" xml:space="preserve">
+    <value>Céleri</value>
   </data>
-  <data name="info" xml:space="preserve">
-    <value>info</value>
+  <data name="Bloemkool" xml:space="preserve">
+    <value>Chou-fleur</value>
   </data>
-  <data name="rate" xml:space="preserve">
-    <value>beoordeel</value>
+  <data name="Broccoli" xml:space="preserve">
+    <value>Brocoli</value>
   </data>
-  <data name="Vegetables" xml:space="preserve">
-    <value>Groenten</value>
+  <data name="Chinese_kool" xml:space="preserve">
+    <value>Pe-tsaï</value>
   </data>
-  <data name="wikipediaBaseUri" xml:space="preserve">
-    <value>http://nl.wikipedia.org/wiki/{0}</value>
+  <data name="Courgette" xml:space="preserve">
+    <value>Courgette</value>
   </data>
-  <data name="Kiwis" xml:space="preserve">
-    <value>Kiwi's</value>
+  <data name="Erwt" xml:space="preserve">
+    <value>Pois</value>
   </data>
-  <data name="Rode_bessen" xml:space="preserve">
-    <value>Rode bessen</value>
+  <data name="Grote_schorseneer" xml:space="preserve">
+    <value>Scorzonera_hispanica</value>
   </data>
-  <data name="Zwarte_bessen" xml:space="preserve">
-    <value>Zwarte bessen</value>
+  <data name="Knolraap" xml:space="preserve">
+    <value>Navet</value>
+  </data>
+  <data name="Knolselderij" xml:space="preserve">
+    <value>Céleri-rave</value>
+  </data>
+  <data name="Komkommer" xml:space="preserve">
+    <value>Concombre</value>
+  </data>
+  <data name="Koolrabi" xml:space="preserve">
+    <value>Chou-rave</value>
+  </data>
+  <data name="Mais" xml:space="preserve">
+    <value>Maïs</value>
+  </data>
+  <data name="Paddenstoel_schimmel" xml:space="preserve">
+    <value>Champignon</value>
+  </data>
+  <data name="Paprika" xml:space="preserve">
+    <value>Poivron</value>
+  </data>
+  <data name="Pastinaak" xml:space="preserve">
+    <value>Panais</value>
+  </data>
+  <data name="Pompoen" xml:space="preserve">
+    <value>Citrouille</value>
+  </data>
+  <data name="Prei" xml:space="preserve">
+    <value>Poireau</value>
+  </data>
+  <data name="Raapstelen" xml:space="preserve">
+    <value>Navette_d%27été</value>
+  </data>
+  <data name="Radijs" xml:space="preserve">
+    <value>Radis</value>
+  </data>
+  <data name="Rammenas" xml:space="preserve">
+    <value>Radis_noir</value>
+  </data>
+  <data name="Rodekool" xml:space="preserve">
+    <value>Chou_rouge</value>
+  </data>
+  <data name="Rode_biet" xml:space="preserve">
+    <value>Betterave</value>
+  </data>
+  <data name="Savooiekool" xml:space="preserve">
+    <value>Chou_de_Milan</value>
+  </data>
+  <data name="Selderij" xml:space="preserve">
+    <value>Céleri</value>
+  </data>
+  <data name="Sla" xml:space="preserve">
+    <value>Laitue_cultivée</value>
+  </data>
+  <data name="Snijbiet" xml:space="preserve">
+    <value>Blette_(plante)</value>
+  </data>
+  <data name="Snijboon" xml:space="preserve">
+    <value>Haricots</value>
+  </data>
+  <data name="Sperzieboon" xml:space="preserve">
+    <value>Haricot_vert</value>
+  </data>
+  <data name="Spinazie" xml:space="preserve">
+    <value>Épinard</value>
+  </data>
+  <data name="Spitskool" xml:space="preserve">
+    <value>Chou</value>
+  </data>
+  <data name="Spruitkool" xml:space="preserve">
+    <value>Chou_de_Bruxelles</value>
+  </data>
+  <data name="Tomaat" xml:space="preserve">
+    <value>Tomate</value>
+  </data>
+  <data name="Ui_plant" xml:space="preserve">
+    <value>Oignon</value>
+  </data>
+  <data name="Veldsla" xml:space="preserve">
+    <value>Valerianella_locusta</value>
+  </data>
+  <data name="Venkel" xml:space="preserve">
+    <value>Fenouil_commun</value>
+  </data>
+  <data name="Witlof" xml:space="preserve">
+    <value>Endive</value>
+  </data>
+  <data name="Wittekool" xml:space="preserve">
+    <value>Chou_cabus</value>
+  </data>
+  <data name="Wortel_groente" xml:space="preserve">
+    <value>Carotte</value>
+  </data>
+  <data name="Aardbei" xml:space="preserve">
+    <value>Fraise_(fruit)</value>
+  </data>
+  <data name="Abrikoos" xml:space="preserve">
+    <value>Abricot</value>
+  </data>
+  <data name="Appel_vrucht" xml:space="preserve">
+    <value>Pomme</value>
+  </data>
+  <data name="Banaan_vrucht" xml:space="preserve">
+    <value>Banane</value>
+  </data>
+  <data name="Braam_cultuurbraam" xml:space="preserve">
+    <value>Mûre</value>
+  </data>
+  <data name="Druif" xml:space="preserve">
+    <value>Raisin</value>
+  </data>
+  <data name="Framboos" xml:space="preserve">
+    <value>Framboise</value>
+  </data>
+  <data name="Kers_fruit" xml:space="preserve">
+    <value>Cerise</value>
+  </data>
+  <data name="Kiwi_fruit" xml:space="preserve">
+    <value>Kiwi</value>
+  </data>
+  <data name="Mandarijn_vrucht" xml:space="preserve">
+    <value>Mandarine</value>
+  </data>
+  <data name="Mango_soort" xml:space="preserve">
+    <value>Mangue</value>
+  </data>
+  <data name="Meloen_vrucht" xml:space="preserve">
+    <value>Melon_(plante)</value>
+  </data>
+  <data name="Nectarine" xml:space="preserve">
+    <value>Nectarine</value>
+  </data>
+  <data name="Peer_vrucht" xml:space="preserve">
+    <value>Poire</value>
+  </data>
+  <data name="Perzik" xml:space="preserve">
+    <value>Pêche_(fruit)</value>
+  </data>
+  <data name="Pompelmoes" xml:space="preserve">
+    <value>Pamplemousse</value>
+  </data>
+  <data name="Pruim" xml:space="preserve">
+    <value>Prune</value>
+  </data>
+  <data name="Rabarber" xml:space="preserve">
+    <value>Rhubarbe</value>
+  </data>
+  <data name="Rode_bes" xml:space="preserve">
+    <value>Ribes_rubrum</value>
+  </data>
+  <data name="Sinaasappel" xml:space="preserve">
+    <value>Orange_(fruit)</value>
+  </data>
+  <data name="Zwarte_bes" xml:space="preserve">
+    <value>Cassis_(fruit)</value>
   </data>
 </root>

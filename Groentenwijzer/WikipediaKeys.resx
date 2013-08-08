@@ -117,69 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
-
-Ik lees de reviews, dus geef gerust opmerkingen!
-
-Ontwikkeld door Peter Morlion
-Huidige versie: 1.4.0
-
-Updates:
-1.4.0
-- Franse versie
-
-1.3.0
-- Aparte info-pagina via app-bar
-- Beoordeel link in app-bar
-
-1.2.1
-- Bugfix
-
-1.2.0
-- Doorklikken naar Wikipedia
-
-1.1.0
-- Fruit toegevoegd
-- Info pagina toegevoegd
-
-1.0.0
-- Enkel groenten</value>
+  <data name="Paddenstoel_schimmel" xml:space="preserve">
+    <value>Paddenstoel_(schimmel)</value>
   </data>
-  <data name="AboutTitle" xml:space="preserve">
-    <value>Info</value>
+  <data name="Ui_plant" xml:space="preserve">
+    <value>Ui_(plant)</value>
   </data>
-  <data name="All" xml:space="preserve">
-    <value>Alles</value>
+  <data name="Wortel_groente" xml:space="preserve">
+    <value>Wortel_(groente)</value>
   </data>
-  <data name="Categories" xml:space="preserve">
-    <value>Categorieën</value>
+  <data name="Aubergine_plant" xml:space="preserve">
+    <value>Aubergine_(plant)</value>
   </data>
-  <data name="Foodcalendar" xml:space="preserve">
-    <value>Voedselkalender</value>
+  <data name="Appel_vrucht" xml:space="preserve">
+    <value>Appel_(vrucht)</value>
   </data>
-  <data name="Fruit" xml:space="preserve">
-    <value>Fruit</value>
+  <data name="Banaan_vrucht" xml:space="preserve">
+    <value>Banaan_(vrucht)</value>
   </data>
-  <data name="info" xml:space="preserve">
-    <value>info</value>
+  <data name="Braam_cultuurbraam" xml:space="preserve">
+    <value>Braam_(cultuurbraam)</value>
   </data>
-  <data name="rate" xml:space="preserve">
-    <value>beoordeel</value>
+  <data name="Kers_fruit" xml:space="preserve">
+    <value>Kers_(fruit)</value>
   </data>
-  <data name="Vegetables" xml:space="preserve">
-    <value>Groenten</value>
+  <data name="Kiwi_fruit" xml:space="preserve">
+    <value>Kiwi_(fruit)</value>
   </data>
-  <data name="wikipediaBaseUri" xml:space="preserve">
-    <value>http://nl.wikipedia.org/wiki/{0}</value>
+  <data name="Mandarijn_vrucht" xml:space="preserve">
+    <value>Mandarijn_(vrucht)</value>
   </data>
-  <data name="Kiwis" xml:space="preserve">
-    <value>Kiwi's</value>
+  <data name="Mango_soort" xml:space="preserve">
+    <value>Mango_(soort)</value>
   </data>
-  <data name="Rode_bessen" xml:space="preserve">
-    <value>Rode bessen</value>
+  <data name="Meloen_vrucht" xml:space="preserve">
+    <value>Meloen_(vrucht)</value>
   </data>
-  <data name="Zwarte_bessen" xml:space="preserve">
-    <value>Zwarte bessen</value>
+  <data name="Peer_vrucht" xml:space="preserve">
+    <value>Peer_(vrucht)</value>
   </data>
 </root>

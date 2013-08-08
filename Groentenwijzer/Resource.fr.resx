@@ -121,7 +121,7 @@
     <value>Pommes de terre</value>
   </data>
   <data name="Andijvie" xml:space="preserve">
-    <value>Andives</value>
+    <value>Chicorée endive</value>
   </data>
   <data name="April" xml:space="preserve">
     <value>Avril</value>
@@ -289,7 +289,7 @@
     <value>Fruit</value>
   </data>
   <data name="Voedselkalender" xml:space="preserve">
-    <value>(Voedselkalender)</value>
+    <value>Calendrier de nourriture</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>Cet app est basé sur le calendrier de Velt vzw.
@@ -328,7 +328,7 @@ Updates:
     <value>Catégories</value>
   </data>
   <data name="Foodcalendar" xml:space="preserve">
-    <value>(Calendrier de nourriture)</value>
+    <value>Calendrier de nourriture</value>
   </data>
   <data name="Vegetables" xml:space="preserve">
     <value>Végétables</value>
@@ -340,9 +340,72 @@ Updates:
     <value>info</value>
   </data>
   <data name="rate" xml:space="preserve">
-    <value>(beoordeel)</value>
+    <value>avis</value>
   </data>
   <data name="wikipediaBaseUri" xml:space="preserve">
     <value>http://fr.wikipedia.org/wiki/{0}</value>
+  </data>
+  <data name="Aardbeien" xml:space="preserve">
+    <value>Fraises</value>
+  </data>
+  <data name="Abrikozen" xml:space="preserve">
+    <value>Abricots</value>
+  </data>
+  <data name="Appelen" xml:space="preserve">
+    <value>Pommes</value>
+  </data>
+  <data name="Bananen" xml:space="preserve">
+    <value>Bananes</value>
+  </data>
+  <data name="Bramen" xml:space="preserve">
+    <value>Mûres</value>
+  </data>
+  <data name="Druiven" xml:space="preserve">
+    <value>Raisins</value>
+  </data>
+  <data name="Frambozen" xml:space="preserve">
+    <value>Framboises</value>
+  </data>
+  <data name="Kersen" xml:space="preserve">
+    <value>Cerises</value>
+  </data>
+  <data name="Kiwis" xml:space="preserve">
+    <value>Kiwis</value>
+  </data>
+  <data name="Mandarijnen" xml:space="preserve">
+    <value>Mandarine</value>
+  </data>
+  <data name="Mango" xml:space="preserve">
+    <value>Mangue</value>
+  </data>
+  <data name="Meloenen" xml:space="preserve">
+    <value>Melons</value>
+  </data>
+  <data name="Necatrines" xml:space="preserve">
+    <value>Nectarines</value>
+  </data>
+  <data name="Peren" xml:space="preserve">
+    <value>Poires</value>
+  </data>
+  <data name="Perziken" xml:space="preserve">
+    <value>Pêches</value>
+  </data>
+  <data name="Pompelmoes" xml:space="preserve">
+    <value>Pamplemousse</value>
+  </data>
+  <data name="Pruimen" xml:space="preserve">
+    <value>Prunes</value>
+  </data>
+  <data name="Rabarber" xml:space="preserve">
+    <value>Rhubarbe</value>
+  </data>
+  <data name="Rode_bessen" xml:space="preserve">
+    <value>Groseillier à grappes</value>
+  </data>
+  <data name="Sinaasappelen" xml:space="preserve">
+    <value>Oranges</value>
+  </data>
+  <data name="Zwarte_bessen" xml:space="preserve">
+    <value>Cassis</value>
   </data>
 </root>

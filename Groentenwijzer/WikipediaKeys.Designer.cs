@@ -22,14 +22,14 @@ namespace Groentenwijzer {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resource {
+    public class WikipediaKeys {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal WikipediaKeys() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Groentenwijzer {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Groentenwijzer.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Groentenwijzer.WikipediaKeys", typeof(WikipediaKeys).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,145 +61,119 @@ namespace Groentenwijzer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
-        ///
-        ///Ik lees de reviews, dus geef gerust opmerkingen!
-        ///
-        ///Ontwikkeld door Peter Morlion
-        ///Huidige versie: 1.4.0
-        ///
-        ///Updates:
-        ///1.4.0
-        ///- Franse versie
-        ///
-        ///1.3.0
-        ///- Aparte info-pagina via app-bar
-        ///- Beoordeel link in app-bar
-        ///
-        ///1.2.1
-        ///- Bugfix
-        ///
-        ///1.2.0
-        ///- Doorklikken naar Wikipedia
-        ///
-        ///1.1.0
-        ///- Fruit toegevoegd
-        ///- Info pagina toegevoegd
-        ///
-        ///1.0.0
-        ///- Enkel groenten.
+        ///   Looks up a localized string similar to Appel_(vrucht).
         /// </summary>
-        public static string About {
+        public static string Appel_vrucht {
             get {
-                return ResourceManager.GetString("About", resourceCulture);
+                return ResourceManager.GetString("Appel_vrucht", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Info.
+        ///   Looks up a localized string similar to Aubergine_(plant).
         /// </summary>
-        public static string AboutTitle {
+        public static string Aubergine_plant {
             get {
-                return ResourceManager.GetString("AboutTitle", resourceCulture);
+                return ResourceManager.GetString("Aubergine_plant", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alles.
+        ///   Looks up a localized string similar to Banaan_(vrucht).
         /// </summary>
-        public static string All {
+        public static string Banaan_vrucht {
             get {
-                return ResourceManager.GetString("All", resourceCulture);
+                return ResourceManager.GetString("Banaan_vrucht", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categorieën.
+        ///   Looks up a localized string similar to Braam_(cultuurbraam).
         /// </summary>
-        public static string Categories {
+        public static string Braam_cultuurbraam {
             get {
-                return ResourceManager.GetString("Categories", resourceCulture);
+                return ResourceManager.GetString("Braam_cultuurbraam", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Voedselkalender.
+        ///   Looks up a localized string similar to Kers_(fruit).
         /// </summary>
-        public static string Foodcalendar {
+        public static string Kers_fruit {
             get {
-                return ResourceManager.GetString("Foodcalendar", resourceCulture);
+                return ResourceManager.GetString("Kers_fruit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fruit.
+        ///   Looks up a localized string similar to Kiwi_(fruit).
         /// </summary>
-        public static string Fruit {
+        public static string Kiwi_fruit {
             get {
-                return ResourceManager.GetString("Fruit", resourceCulture);
+                return ResourceManager.GetString("Kiwi_fruit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to info.
+        ///   Looks up a localized string similar to Mandarijn_(vrucht).
         /// </summary>
-        public static string info {
+        public static string Mandarijn_vrucht {
             get {
-                return ResourceManager.GetString("info", resourceCulture);
+                return ResourceManager.GetString("Mandarijn_vrucht", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kiwi&apos;s.
+        ///   Looks up a localized string similar to Mango_(soort).
         /// </summary>
-        public static string Kiwis {
+        public static string Mango_soort {
             get {
-                return ResourceManager.GetString("Kiwis", resourceCulture);
+                return ResourceManager.GetString("Mango_soort", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to beoordeel.
+        ///   Looks up a localized string similar to Meloen_(vrucht).
         /// </summary>
-        public static string rate {
+        public static string Meloen_vrucht {
             get {
-                return ResourceManager.GetString("rate", resourceCulture);
+                return ResourceManager.GetString("Meloen_vrucht", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rode bessen.
+        ///   Looks up a localized string similar to Paddenstoel_(schimmel).
         /// </summary>
-        public static string Rode_bessen {
+        public static string Paddenstoel_schimmel {
             get {
-                return ResourceManager.GetString("Rode_bessen", resourceCulture);
+                return ResourceManager.GetString("Paddenstoel_schimmel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Groenten.
+        ///   Looks up a localized string similar to Peer_(vrucht).
         /// </summary>
-        public static string Vegetables {
+        public static string Peer_vrucht {
             get {
-                return ResourceManager.GetString("Vegetables", resourceCulture);
+                return ResourceManager.GetString("Peer_vrucht", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://nl.wikipedia.org/wiki/{0}.
+        ///   Looks up a localized string similar to Ui_(plant).
         /// </summary>
-        public static string wikipediaBaseUri {
+        public static string Ui_plant {
             get {
-                return ResourceManager.GetString("wikipediaBaseUri", resourceCulture);
+                return ResourceManager.GetString("Ui_plant", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zwarte bessen.
+        ///   Looks up a localized string similar to Wortel_(groente).
         /// </summary>
-        public static string Zwarte_bessen {
+        public static string Wortel_groente {
             get {
-                return ResourceManager.GetString("Zwarte_bessen", resourceCulture);
+                return ResourceManager.GetString("Wortel_groente", resourceCulture);
             }
         }
     }

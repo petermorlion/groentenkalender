@@ -41,7 +41,8 @@ namespace Groentenwijzer
         private void FoodItem_Click(object sender, RoutedEventArgs e)
         {
             var hyperlinkButton = (HyperlinkButton) sender;
-            var wikipediaKey = Vegetables.All().Union(Fruit.All()).Single(x => x.Name == hyperlinkButton.Content.ToString()).WikipediaKey;
+            var foodItemViewModel = (FoodItemViewModel)hyperlinkButton.DataContext;
+            var wikipediaKey = Vegetables.All().Union(Fruit.All()).Single(x => x.Name == foodItemViewModel.Key).WikipediaKey;
             var uriString = string.Format("/Groentenwijzer;component/FoodDetailView.xaml?FoodName={0}&WikipediaKey={1}", hyperlinkButton.Content, wikipediaKey);
             NavigationService.Navigate(new Uri(uriString, UriKind.Relative));
         }

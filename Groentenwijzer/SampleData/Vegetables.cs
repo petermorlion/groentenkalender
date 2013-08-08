@@ -24,7 +24,7 @@ namespace Groentenwijzer.SampleData
                            new FoodItem { Name = "Andijvie", Months = new List<int> { 4, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Andijvie" },
                            new FoodItem { Name = "Artisjok", Months = new List<int> { 6, 7, 8, 9, 10 }, WikipediaKey = "Artisjok" },
                            new FoodItem { Name = "Asperges", Months = new List<int> { 5, 6 }, WikipediaKey = "Asperge" },
-                           new FoodItem { Name = "Aubergine", Months = new List<int> { 7, 8, 9, 10 }, WikipediaKey = "Aubergine" },
+                           new FoodItem { Name = "Aubergine", Months = new List<int> { 7, 8, 9, 10 }, WikipediaKey = "Aubergine_plant" },
                            new FoodItem { Name = "Bleekselder", Months = new List<int> { 7, 8, 9, 10, 11 }, WikipediaKey = "Bleekselderij" },
                            new FoodItem { Name = "Bloemkool", Months = new List<int> { 3, 4, 5, 6, 7, 8, 9, 10, 11 }, WikipediaKey = "Bloemkool" },
                            new FoodItem { Name = "Broccoli", Months = new List<int> { 6, 7, 8, 9, 10, 11 }, WikipediaKey = "Broccoli" },
@@ -37,7 +37,7 @@ namespace Groentenwijzer.SampleData
                            new FoodItem { Name = "Koolrabi", Months = new List<int> { 5, 6, 7, 8, 9, 10 }, WikipediaKey = "Koolrabi" },
                            new FoodItem { Name = "Kropsla", Months = new List<int> { 5, 6, 7, 8, 9, 10 }, WikipediaKey = "Sla" },
                            new FoodItem { Name = "Maïs", Months = new List<int> { 8, 9 }, WikipediaKey = "Mais" },
-                           new FoodItem { Name = "Paddenstoelen", Months = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Paddenstoel_(schimmel)" },
+                           new FoodItem { Name = "Paddenstoelen", Months = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Paddenstoel_schimmel" },
                            new FoodItem { Name = "Paprika", Months = new List<int> { 7, 8, 9, 10 }, WikipediaKey = "Paprika" },
                            new FoodItem { Name = "Pastinaak", Months = new List<int> { 1, 2, 3, 10, 11, 12 }, WikipediaKey = "Pastinaak" },
                            new FoodItem { Name = "Pompoen", Months = new List<int> { 1, 2, 3, 8, 9, 10, 11, 12 }, WikipediaKey = "Pompoen" },
@@ -56,13 +56,13 @@ namespace Groentenwijzer.SampleData
                            new FoodItem { Name = "Spitskool", Months = new List<int> { 5, 6, 7, 8, 9, 10 }, WikipediaKey = "Spitskool" },
                            new FoodItem { Name = "Spruiten", Months = new List<int> { 1, 2, 3, 10, 11, 12 }, WikipediaKey = "Spruitkool" },
                            new FoodItem { Name = "Tomaten", Months = new List<int> { 6, 7, 8, 9, 10 }, WikipediaKey = "Tomaat" },
-                           new FoodItem { Name = "Uien", Months = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Ui_(plant)" },
+                           new FoodItem { Name = "Uien", Months = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Ui_plant" },
                            new FoodItem { Name = "Veldsla", Months = new List<int> { 1, 2, 3, 10, 11, 12 }, WikipediaKey = "Veldsla" },
                            new FoodItem { Name = "Venkel", Months = new List<int> { 6, 7, 9, 10, 11 }, WikipediaKey = "Venkel" },
                            new FoodItem { Name = "Warmoes", Months = new List<int> { 5, 6, 7, 8, 9, 10 }, WikipediaKey = "Snijbiet" },
                            new FoodItem { Name = "Witlof", Months = new List<int> { 1, 2, 3, 4, 10, 11, 12 }, WikipediaKey = "Witlof" },
                            new FoodItem { Name = "Wittekool", Months = new List<int> { 1, 2, 3, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Wittekool" },
-                           new FoodItem { Name = "Wortelen", Months = new List<int> { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Wortel_(groente)" },
+                           new FoodItem { Name = "Wortelen", Months = new List<int> { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12 }, WikipediaKey = "Wortel_groente" },
                        };
         }
     }

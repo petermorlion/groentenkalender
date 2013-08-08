@@ -12,9 +12,12 @@ namespace Groentenwijzer
         public FoodItemViewModel(string name)
         {
             Name = Resource.ResourceManager.GetString(name.Replace(" ", "_")) ?? name;
+            Key = name;
         }
 
         public string Name { get; set; }
+
+        public string Key { get; private set; }
      
         public event PropertyChangedEventHandler PropertyChanged;
 
