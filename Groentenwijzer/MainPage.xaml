@@ -42,6 +42,8 @@
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized">
             <shell:ApplicationBarIconButton IconUri="/i.png" Click="OnAboutIconClicked" Text="info"></shell:ApplicationBarIconButton>
             <shell:ApplicationBarIconButton IconUri="/favs.png" Click="OnRateIconClicked" Text="beoordeel"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton IconUri="/mail.png" Click="OnContactIconClicked" Text="contact"></shell:ApplicationBarIconButton>
+            
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

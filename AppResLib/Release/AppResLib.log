@@ -1,0 +1,11 @@
+﻿Build started 8/08/2013 12:51:57.
+     1>Project "C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\AppResLib\AppResLib.vcxproj" on node 3 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\Release\AppResLib.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\Release\AppResLib.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\Release\AppResLib.lib" /MACHINE:X86 /SAFESEH /DLL Release\AppResLib1.res
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         AppResLib.vcxproj -> C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\Release\AppResLib.dll
+     1>Done Building Project "C:\Users\Peter\Documents\Visual Studio 2012\Projects\Groentenwijzer\AppResLib\AppResLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.83

@@ -1,6 +1,7 @@
 ﻿using System;
 using Groentenwijzer.SampleData;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
 
 namespace Groentenwijzer
@@ -13,6 +14,11 @@ namespace Groentenwijzer
 
             Fruit.Initialize();
             Vegetables.Initialize();
+
+            foreach (ApplicationBarIconButton button in this.ApplicationBar.Buttons)
+            {
+                button.Text = Resource.ResourceManager.GetString(button.Text) ?? button.Text;
+            }
 
             FruitButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Fruit", UriKind.Relative));
             VegetablesButton.Click += (s, e) => NavigationService.Navigate(new Uri("/Groentenwijzer;component/FoodByMonthView.xaml?FoodType=Vegetable", UriKind.Relative));
@@ -28,6 +34,11 @@ namespace Groentenwijzer
         {
             var task = new MarketplaceReviewTask();
             task.Show();
+        }
+
+        private void OnContactIconClicked(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Groentenwijzer;component/Contact.xaml", UriKind.Relative));
         }
     }
 }

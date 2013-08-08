@@ -64,6 +64,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Contact.xaml.cs">
+      <DependentUpon>Contact.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WikipediaKeys.Designer.cs">
       <DependentUpon>WikipediaKeys.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -113,6 +116,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Contact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="FoodByMonthView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -131,6 +138,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppResLib.dll.040c.mui" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
@@ -140,11 +148,13 @@
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="AppResLib.dll" />
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="favs.png" />
     <Content Include="i.png" />
+    <Content Include="mail.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

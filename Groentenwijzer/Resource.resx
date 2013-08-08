@@ -120,14 +120,13 @@
   <data name="About" xml:space="preserve">
     <value>Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
 
-Ik lees de reviews, dus geef gerust opmerkingen!
-
-Ontwikkeld door Peter Morlion
+Ontwikkeld door Peter Morlion (peter.morlion@live.be)
 Huidige versie: 1.4.0
 
 Updates:
 1.4.0
 - Franse versie
+- Wikipedie links voor fruit werken nu
 
 1.3.0
 - Aparte info-pagina via app-bar
@@ -161,12 +160,6 @@ Updates:
   <data name="Fruit" xml:space="preserve">
     <value>Fruit</value>
   </data>
-  <data name="info" xml:space="preserve">
-    <value>info</value>
-  </data>
-  <data name="rate" xml:space="preserve">
-    <value>beoordeel</value>
-  </data>
   <data name="Vegetables" xml:space="preserve">
     <value>Groenten</value>
   </data>
@@ -181,5 +174,8 @@ Updates:
   </data>
   <data name="Zwarte_bessen" xml:space="preserve">
     <value>Zwarte bessen</value>
+  </data>
+  <data name="mailSubject" xml:space="preserve">
+    <value>Opmerkingen over Voedselkalender app</value>
   </data>
 </root>

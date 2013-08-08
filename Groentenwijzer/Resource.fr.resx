@@ -294,7 +294,6 @@
   <data name="About" xml:space="preserve">
     <value>Cet app est basé sur le calendrier de Velt vzw.
 
-Je lis les reviews, donc n'hésitez pas de donner des remarques!
 Si vous trouvez des fautes, contactez moi sur peter.morlion@live.be (parce que le français n'est pas ma langue maternelle).
 	
 Dévelopé par Peter Morlion
@@ -303,6 +302,7 @@ Version 1.4.0
 Updates:
 1.4.0
 - Version français
+- Liens des fruits fonctionnent maintenant
 
 1.3.0
 - Page d'info apart
@@ -336,11 +336,8 @@ Updates:
   <data name="AboutTitle" xml:space="preserve">
     <value>Info</value>
   </data>
-  <data name="info" xml:space="preserve">
-    <value>info</value>
-  </data>
-  <data name="rate" xml:space="preserve">
-    <value>avis</value>
+  <data name="beoordeel" xml:space="preserve">
+    <value>évaluer</value>
   </data>
   <data name="wikipediaBaseUri" xml:space="preserve">
     <value>http://fr.wikipedia.org/wiki/{0}</value>
@@ -407,5 +404,8 @@ Updates:
   </data>
   <data name="Zwarte_bessen" xml:space="preserve">
     <value>Cassis</value>
+  </data>
+  <data name="mailSubject" xml:space="preserve">
+    <value>Rémarques sur app "Calendrier de nourriture"</value>
   </data>
 </root>

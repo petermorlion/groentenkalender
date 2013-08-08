@@ -63,14 +63,13 @@ namespace Groentenwijzer {
         /// <summary>
         ///   Looks up a localized string similar to Deze app is gebaseerd op de groente- en fruitkalender van Velt vzw.
         ///
-        ///Ik lees de reviews, dus geef gerust opmerkingen!
-        ///
-        ///Ontwikkeld door Peter Morlion
+        ///Ontwikkeld door Peter Morlion (peter.morlion@live.be)
         ///Huidige versie: 1.4.0
         ///
         ///Updates:
         ///1.4.0
         ///- Franse versie
+        ///- Wikipedie links voor fruit werken nu
         ///
         ///1.3.0
         ///- Aparte info-pagina via app-bar
@@ -141,15 +140,6 @@ namespace Groentenwijzer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to info.
-        /// </summary>
-        public static string info {
-            get {
-                return ResourceManager.GetString("info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Kiwi&apos;s.
         /// </summary>
         public static string Kiwis {
@@ -159,11 +149,11 @@ namespace Groentenwijzer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to beoordeel.
+        ///   Looks up a localized string similar to Opmerkingen over Voedselkalender app.
         /// </summary>
-        public static string rate {
+        public static string mailSubject {
             get {
-                return ResourceManager.GetString("rate", resourceCulture);
+                return ResourceManager.GetString("mailSubject", resourceCulture);
             }
         }
         
