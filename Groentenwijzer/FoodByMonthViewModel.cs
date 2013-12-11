@@ -10,7 +10,7 @@ namespace Groentenwijzer
     public class FoodByMonthViewModel : INotifyPropertyChanged
     {
         private int _selectedMonth;
-        private IEnumerable<FoodType> _foodTypes;
+        private readonly IEnumerable<FoodType> _foodTypes;
 
         public FoodByMonthViewModel(IEnumerable<FoodType> foodTypes)
         {
