@@ -23,9 +23,6 @@ namespace Groentenwijzer
         public FoodByMonthView()
         {
             InitializeComponent();
-
-            // Set the data context of the listbox control to the sample data
-            this.Loaded += new RoutedEventHandler(FoodByMonthView_Loaded);
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
