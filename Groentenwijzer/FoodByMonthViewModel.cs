@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -12,10 +11,10 @@ namespace Groentenwijzer
         private int _selectedMonth;
         private readonly IEnumerable<FoodType> _foodTypes;
 
-        public FoodByMonthViewModel(IEnumerable<FoodType> foodTypes)
+        public FoodByMonthViewModel(IEnumerable<FoodType> foodTypes, int selectedMonth)
         {
             _foodTypes = foodTypes;
-            _selectedMonth = DateTime.Now.Month - 1;
+            _selectedMonth = selectedMonth;
         }
 
         public ObservableCollection<MonthViewModel> AllMonths

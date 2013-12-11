@@ -8,6 +8,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Groentenwijzer.SampleData;
 using Microsoft.Phone.Controls;
@@ -16,6 +17,8 @@ namespace Groentenwijzer
 {
     public partial class FoodByMonthView : PhoneApplicationPage
     {
+        private NavigationMode _navigationMode;
+
         // Constructor
         public FoodByMonthView()
         {
@@ -25,17 +28,21 @@ namespace Groentenwijzer
             this.Loaded += new RoutedEventHandler(FoodByMonthView_Loaded);
         }
 
-        // Load data for the ViewModel Items
-        private void FoodByMonthView_Loaded(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            IList<FoodType> foodTypes = new List<FoodType> { FoodType.Fruit, FoodType.Vegetable };
-            if (NavigationContext.QueryString.ContainsKey("FoodType"))
+            base.OnNavigatedTo(e);
+            _navigationMode = e.NavigationMode;
+            if (e.NavigationMode != NavigationMode.Back)
             {
-                var selectedFoodType = (FoodType)Enum.Parse(typeof(FoodType), NavigationContext.QueryString["FoodType"], true);
-                foodTypes = new List<FoodType> { selectedFoodType };
-            }
+                IList<FoodType> foodTypes = new List<FoodType> { FoodType.Fruit, FoodType.Vegetable };
+                if (NavigationContext.QueryString.ContainsKey("FoodType"))
+                {
+                    var selectedFoodType = (FoodType)Enum.Parse(typeof(FoodType), NavigationContext.QueryString["FoodType"], true);
+                    foodTypes = new List<FoodType> { selectedFoodType };
+                }
 
-            MainPivot.DataContext = new FoodByMonthViewModel(foodTypes);
+                MainPivot.DataContext = new FoodByMonthViewModel(foodTypes, DateTime.Now.Month - 1);
+            }
         }
 
         private void FoodItem_Click(object sender, RoutedEventArgs e)
